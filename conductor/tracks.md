@@ -31,3 +31,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Add timestamps to python-backend and nextjs-frontend logs**
 
 *Link: [./tracks/log_timestamps_20260207/](./tracks/log_timestamps_20260207/)*
+
+---
+
+- [x] **Track: Fix Next.js Chat Scrolling and Markdown Overflow**
+*Link: [./tracks/fix_nextjs_chat_ui_20260207/](./tracks/fix_nextjs_chat_ui_20260207/)*
