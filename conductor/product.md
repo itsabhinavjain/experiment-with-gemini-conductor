@@ -133,12 +133,20 @@ POST /chat
 GET /health
 ```
 
-Example response structure:
+The `/chat` endpoint uses Server-Sent Events (SSE) to stream responses.
+
+**Response Stream Events:**
+Chunks are sent as JSON strings with the following types:
+- `session_id`: Sent first to provide the session identifier.
+- `thinking`: Contains thinking/reasoning blocks.
+- `text`: Contains the actual assistant message content.
+- `error`: Contains error messages if they occur.
+
+**Example Chunk Structure:**
 ```json
 {
-  "message": "...",
-  "thinking": "...",
-  "session_id": "..."
+  "type": "text",
+  "content": "Hello! How can I help you today?"
 }
 ```
 

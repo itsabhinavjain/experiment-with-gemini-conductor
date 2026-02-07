@@ -19,6 +19,10 @@ This document outlines the core technologies and frameworks chosen for the Claud
 - **Role:** Used for building the RESTful API for the Python backend.
 - **Rationale:** Selected for its high performance, asynchronous capabilities (ASGI), automatic OpenAPI (Swagger UI) documentation generation, and excellent developer experience. It aligns well with the async-first design principle.
 
+#### `sse-starlette`
+- **Role:** Provides Server-Sent Events (SSE) support for FastAPI.
+- **Rationale:** Necessary for implementing the real-time streaming requirement for chat responses.
+
 ### Claude Agent SDK
 - **Type:** AI Agent Integration
 - **Role:** The core library for interacting with Claude AI agents, enabling the backend to manage sessions, process prompts, and retrieve responses including thinking blocks.
