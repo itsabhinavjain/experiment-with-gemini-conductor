@@ -19,7 +19,7 @@ export default function MessageList({ messages }: MessageListProps) {
   }, [messages]);
 
   return (
-    <div className="flex-1 overflow-y-auto p-4 space-y-4">
+    <div className="flex-1 h-full overflow-y-auto p-4 space-y-4">
       {messages.length === 0 ? (
         <div className="text-center text-gray-500 mt-10 italic">
           No messages yet. Start a conversation!

@@ -86,7 +86,7 @@ export default function Home() {
       </header>
 
       <div className="flex-1 overflow-hidden">
-        <div className="h-full mx-auto max-w-4xl bg-transparent">
+        <div className="h-full mx-auto max-w-4xl bg-transparent flex flex-col">
           <MessageList messages={messages} />
         </div>
       </div>
