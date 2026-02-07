@@ -34,8 +34,7 @@ export async function* streamChat(prompt: string, sessionId?: string): AsyncGene
     if (done) break;
 
     buffer += decoder.decode(value, { stream: true });
-    const lines = buffer.split('
-');
+    const lines = buffer.split('\n');
     buffer = lines.pop() || '';
 
     for (const line of lines) {
