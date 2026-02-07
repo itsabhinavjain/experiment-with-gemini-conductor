@@ -4,7 +4,7 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track 01: Research and Python Backend Core**
+- [x] **Track 01: Research and Python Backend Core**
   *Build the foundation: research the Claude Agent SDK and implement the FastAPI backend with streaming and thinking blocks.*
   *Link: [./tracks/01_backend_core/](./tracks/01_backend_core/)*
 
