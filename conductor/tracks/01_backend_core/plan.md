@@ -35,6 +35,6 @@
   - [x] Implement Feature: Implement chat logic with streaming response.
   - [x] Ensure thinking blocks are correctly extracted and streamed.
 
-## Phase 4: Verification
+## Phase 4: Verification [checkpoint: 154461f]
 
 - [x] Task: Conductor - User Manual Verification 'Backend Core Implementation'
