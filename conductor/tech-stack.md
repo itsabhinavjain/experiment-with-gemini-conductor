@@ -37,6 +37,11 @@ This document outlines the core technologies and frameworks chosen for the Claud
 - **Role:** Used for creating a rich and visually appealing command-line interface.
 - **Rationale:** Provides advanced features for beautiful formatting, syntax highlighting, progress bars, tables, and more, significantly enhancing the user experience of the CLI client while making output readable and structured.
 
+#### `httpx`
+- **Type:** Async HTTP Client
+- **Role:** Used for making asynchronous requests to the Python backend.
+- **Rationale:** Chosen for its async support, which aligns with the project's async-first design principle, and its compatibility with Server-Sent Events (SSE).
+
 ### Next.js Frontend (Web)
 
 #### Next.js
