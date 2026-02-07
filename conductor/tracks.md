@@ -12,7 +12,7 @@ This file tracks all major tracks for the project. Each track has its own detail
   *Develop a terminal-based client using `rich` that interacts with the Python backend.*
   *Link: [./tracks/02_python_cli/](./tracks/02_python_cli/)*
 
-- [ ] **Track 03: Next.js Web Frontend**
+- [x] **Track 03: Next.js Web Frontend**
   *Create a modern web interface using Next.js App Router to interact with the Claude Agent SDK.*
   *Link: [./tracks/03_nextjs_frontend/](./tracks/03_nextjs_frontend/)*
 

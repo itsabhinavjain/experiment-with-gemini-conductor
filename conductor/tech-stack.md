@@ -49,6 +49,16 @@ This document outlines the core technologies and frameworks chosen for the Claud
 - **Role:** Powers the web-based chat interface.
 - **Rationale:** Chosen for its support for React's App Router, server-side rendering (SSR), static site generation (SSG), and API routes, providing a robust and performant foundation for a modern web application. It simplifies development of a full-stack web application.
 
+#### shadcn/ui
+- **Type:** UI Component Library
+- **Role:** Provides high-quality, accessible, and customizable UI components.
+- **Rationale:** Built on Radix UI and Tailwind CSS, it allows for building a polished and professional-looking interface quickly while maintaining full control over the code.
+
+#### lucide-react
+- **Type:** Icon Library
+- **Role:** Provides a set of clean and consistent icons for the web interface.
+- **Rationale:** A popular and lightweight icon library that integrates seamlessly with React and shadcn/ui.
+
 ## 4. Development Tools & Standards
 
 ### `uv`
