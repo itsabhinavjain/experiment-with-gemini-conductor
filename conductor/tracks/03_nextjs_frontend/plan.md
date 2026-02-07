@@ -8,15 +8,15 @@
 
 ## Phase 2: Core Implementation
 
-- [ ] Task: Implement API Service
-  - [ ] Action: Create a utility to fetch from the `python-backend`.
-  - [ ] Action: Implement streaming response handler in the frontend.
-- [ ] Task: Build Chat UI Components
-  - [ ] Action: Create `MessageList`, `MessageItem`, and `ChatInput` components.
-  - [ ] Action: Implement `ThinkingPanel` (collapsible).
-- [ ] Task: Implement Chat Logic and State Management
-  - [ ] Action: Use React hooks (useState, useEffect) to manage conversation state.
-  - [ ] Action: Ensure session ID is preserved between requests.
+- [x] Task: Implement API Service 02fa231
+  - [x] Action: Create a utility to fetch from the `python-backend`.
+  - [x] Action: Implement streaming response handler in the frontend.
+- [x] Task: Build Chat UI Components 8ca0016
+  - [x] Action: Create `MessageList`, `MessageItem`, and `ChatInput` components.
+  - [x] Action: Implement `ThinkingPanel` (collapsible).
+- [x] Task: Implement Chat Logic and State Management 906c26d
+  - [x] Action: Use React hooks (useState, useEffect) to manage conversation state.
+  - [x] Action: Ensure session ID is preserved between requests.
 
 ## Phase 3: Verification
 
