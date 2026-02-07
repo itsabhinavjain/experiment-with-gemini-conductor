@@ -1,0 +1,8 @@
+{
+  "track_id": "core_agent_sdk_20260207",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-07T00:00:00Z",
+  "updated_at": "2026-02-07T00:00:00Z",
+  "description": "Build the core functionality for the Claude Agent SDK with Python backend, including agent initialization, session management, and basic chat endpoints with streaming responses and thinking blocks, and also implement a basic Python CLI to interact with it."
+}
