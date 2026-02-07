@@ -60,3 +60,7 @@ This document outlines the core technologies and frameworks chosen for the Claud
 
 -   **Asynchronous First:** Design principle applied throughout the Python backend and wherever applicable in frontends to ensure responsiveness and efficient handling of I/O operations, particularly with streaming responses from the Claude Agent SDK.
 -   **Modular Microservices (Conceptual):** While a small project, components are separated into distinct services (Python Backend, Python Frontend, Next.js Frontend) to demonstrate clear separation of concerns and potential for scaling.
+
+## 6. Assumptions
+
+-   **Backend Connectivity:** For development and testing of the `python-frontend`, it is assumed that the `python-backend` is implemented and running on `http://0.0.0.0:8000`.

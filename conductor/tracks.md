@@ -8,7 +8,7 @@ This file tracks all major tracks for the project. Each track has its own detail
   *Build the foundation: research the Claude Agent SDK and implement the FastAPI backend with streaming and thinking blocks.*
   *Link: [./tracks/01_backend_core/](./tracks/01_backend_core/)*
 
-- [ ] **Track 02: Python CLI Frontend**
+- [~] **Track 02: Python CLI Frontend**
   *Develop a terminal-based client using `rich` that interacts with the Python backend.*
   *Link: [./tracks/02_python_cli/](./tracks/02_python_cli/)*
 
