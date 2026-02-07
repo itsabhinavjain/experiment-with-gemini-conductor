@@ -19,7 +19,7 @@
     - [x] Verify that the application still functions correctly via existing component tests.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Next.js Utility' (Protocol in workflow.md)
 
-**Phase 3: Next.js Dev Server Log Formatting**
+**Phase 3: Next.js Dev Server Log Formatting** [checkpoint: ad38d3e]
 - [x] Task: Create `scripts/log-formatter.js`
     - [x] Implement a lightweight Node.js script that reads from `stdin` and outputs each line prefixed with the timestamp.
     - [x] Add a simple test script to verify the formatter.
