@@ -21,10 +21,6 @@ Goal: The chat should automatically scroll down whenever new messages or streami
 ## Phase 3: Markdown Overflow Fixes
 Goal: Fix horizontal overflow for long words and ensure code blocks scroll horizontally.
 
-- [ ] **Task: Write tests for Markdown Overflow**
-    - [ ] Verify message bubbles have `overflow-wrap: break-word` or `word-break: break-all`.
-    - [ ] Verify code blocks (`pre`/`code`) have `overflow-x: auto`.
-- [ ] **Task: Implement Styling for Overflow**
-    - [ ] Update `src/components/MessageItem.tsx` (or the relevant markdown renderer component) to apply word-wrapping styles.
-    - [ ] Update global CSS or component styles to ensure code blocks within chat bubbles scroll horizontally.
+- [x] **Task: Write tests for Markdown Overflow** a5b2123
+- [x] **Task: Implement Styling for Overflow** da12a97
 - [ ] **Task: Conductor - User Manual Verification 'Phase 3: Markdown Overflow' (Protocol in workflow.md)**
