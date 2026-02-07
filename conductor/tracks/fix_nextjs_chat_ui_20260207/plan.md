@@ -18,7 +18,7 @@ Goal: The chat should automatically scroll down whenever new messages or streami
 - [x] **Task: Implement Auto-scroll logic** 13a973a
 - [ ] **Task: Conductor - User Manual Verification 'Phase 2: Auto-Scroll' (Protocol in workflow.md)**
 
-## Phase 3: Markdown Overflow Fixes
+## Phase 3: Markdown Overflow Fixes [checkpoint: 480790d]
 Goal: Fix horizontal overflow for long words and ensure code blocks scroll horizontally.
 
 - [x] **Task: Write tests for Markdown Overflow** a5b2123
