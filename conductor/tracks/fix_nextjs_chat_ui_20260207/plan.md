@@ -11,7 +11,7 @@ Goal: Ensure the chat area has a fixed height relative to the viewport and allow
     - [x] Ensure the input area stays fixed at the bottom.
 - [ ] **Task: Conductor - User Manual Verification 'Phase 1: Chat Container Layout' (Protocol in workflow.md)**
 
-## Phase 2: Auto-Scroll to Latest Message
+## Phase 2: Auto-Scroll to Latest Message [checkpoint: fc1ec19]
 Goal: The chat should automatically scroll down whenever new messages or streaming chunks arrive.
 
 - [x] **Task: Write tests for Auto-scroll behavior** 13a973a
