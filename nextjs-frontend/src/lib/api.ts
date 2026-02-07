@@ -1,3 +1,5 @@
+import { logger } from './logger';
+
 export interface ChatResponseChunk {
   type: 'session_id' | 'thinking' | 'text' | 'error';
   content: string;
@@ -9,6 +11,7 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_API_URL || 'http://localhost
  * Streams chat responses from the backend.
  */
 export async function* streamChat(prompt: string, sessionId?: string): AsyncGenerator<ChatResponseChunk> {
+  logger.info(`Starting chat stream for session: ${sessionId || 'new'}`);
   const response = await fetch(`${BACKEND_URL}/chat`, {
     method: 'POST',
     headers: {
@@ -18,11 +21,13 @@ export async function* streamChat(prompt: string, sessionId?: string): AsyncGene
   });
 
   if (!response.ok) {
+    logger.error(`HTTP error! status: ${response.status}`);
     throw new Error(`HTTP error! status: ${response.status}`);
   }
 
   const reader = response.body?.getReader();
   if (!reader) {
+    logger.error('Response body is not readable');
     throw new Error('Response body is not readable');
   }
 
@@ -31,7 +36,10 @@ export async function* streamChat(prompt: string, sessionId?: string): AsyncGene
 
   while (true) {
     const { done, value } = await reader.read();
-    if (done) break;
+    if (done) {
+      logger.info('Stream completed');
+      break;
+    }
 
     buffer += decoder.decode(value, { stream: true });
     const lines = buffer.split('\n');
@@ -45,7 +53,7 @@ export async function* streamChat(prompt: string, sessionId?: string): AsyncGene
             const chunk: ChatResponseChunk = JSON.parse(jsonStr);
             yield chunk;
           } catch (e) {
-            console.error('Error parsing SSE chunk:', e, jsonStr);
+            logger.error(`Error parsing SSE chunk: ${e} | Content: ${jsonStr}`);
           }
         }
       }

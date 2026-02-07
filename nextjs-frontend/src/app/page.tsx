@@ -6,6 +6,7 @@ import ChatInput from '@/components/ChatInput';
 import { Message } from '@/components/MessageItem';
 import { streamChat } from '@/lib/api';
 import { Sparkles } from 'lucide-react';
+import { logger } from '@/lib/logger';
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -13,6 +14,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSend = async (content: string) => {
+    logger.info(`Sending message: ${content.slice(0, 50)}${content.length > 50 ? '...' : ''}`);
     const userMessage: Message = { role: 'user', content };
     setMessages((prev) => [...prev, userMessage]);
     setIsLoading(true);
@@ -26,6 +28,7 @@ export default function Home() {
 
       for await (const chunk of streamChat(content, sessionId)) {
         if (chunk.type === 'session_id') {
+          logger.info(`Session established: ${chunk.content}`);
           setSessionId(chunk.content);
         } else if (chunk.type === 'thinking') {
           currentThinking += chunk.content;
@@ -34,11 +37,12 @@ export default function Home() {
           currentContent += chunk.content;
           updateLastMessage(currentContent, currentThinking);
         } else if (chunk.type === 'error') {
+          logger.error(`Assistant reported error: ${chunk.content}`);
           updateLastMessage(currentContent, currentThinking, chunk.content);
         }
       }
     } catch (error) {
-      console.error('Chat error:', error);
+      logger.error(`Chat interaction failed: ${error}`);
       updateLastMessage('', '', 'Failed to connect to backend.');
     } finally {
       setIsLoading(false);
