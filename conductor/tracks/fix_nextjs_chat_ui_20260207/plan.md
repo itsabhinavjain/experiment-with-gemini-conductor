@@ -1,6 +1,6 @@
 # Implementation Plan - Fix Next.js Chat Scrolling and Markdown Overflow
 
-## Phase 1: Chat Container Layout & Vertical Scrolling
+## Phase 1: Chat Container Layout & Vertical Scrolling [checkpoint: 5feecc9]
 Goal: Ensure the chat area has a fixed height relative to the viewport and allows vertical scrolling.
 
 - [x] **Task: Write tests for Chat Window scrollability** fc68e31
