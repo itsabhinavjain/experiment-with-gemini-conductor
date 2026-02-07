@@ -17,5 +17,17 @@ This file tracks all major tracks for the project. Each track has its own detail
   *Link: [./tracks/03_nextjs_frontend/](./tracks/03_nextjs_frontend/)*
 
 - [x] **Track 04: Educational Documentation**
+
   *Produce beginner-friendly documentation explaining the system architecture and implementation details.*
+
   *Link: [./tracks/04_documentation/](./tracks/04_documentation/)*
+
+
+
+---
+
+
+
+- [x] **Track: Add timestamps to python-backend and nextjs-frontend logs**
+
+*Link: [./tracks/log_timestamps_20260207/](./tracks/log_timestamps_20260207/)*
