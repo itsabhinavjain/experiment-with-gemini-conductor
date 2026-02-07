@@ -59,6 +59,7 @@ export default function MessageItem({ message }: MessageItemProps) {
                       language={match[1]}
                       PreTag="div"
                       className="rounded-md my-2"
+                      customStyle={{ margin: 0, padding: '1rem', overflowX: 'auto' }}
                       {...props}
                     >
                       {String(children).replace(/\n$/, '')}
