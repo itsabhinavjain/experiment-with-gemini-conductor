@@ -16,6 +16,6 @@ This file tracks all major tracks for the project. Each track has its own detail
   *Create a modern web interface using Next.js App Router to interact with the Claude Agent SDK.*
   *Link: [./tracks/03_nextjs_frontend/](./tracks/03_nextjs_frontend/)*
 
-- [ ] **Track 04: Educational Documentation**
+- [x] **Track 04: Educational Documentation**
   *Produce beginner-friendly documentation explaining the system architecture and implementation details.*
   *Link: [./tracks/04_documentation/](./tracks/04_documentation/)*
