@@ -7,7 +7,7 @@
   - [x] Action: Run `uv init`.
   - [x] Action: Add dependencies: `rich`, `httpx`, `python-dotenv`.
 
-## Phase 2: Core Implementation
+## Phase 2: Core Implementation [checkpoint: c9d0f8a]
 
 - [x] Task: Implement API Client
   - [x] Write Tests: Test connection to backend health endpoint.
@@ -23,4 +23,4 @@
 
 ## Phase 3: Verification
 
-- [ ] Task: Conductor - User Manual Verification 'Python CLI Frontend'
+- [x] Task: Conductor - User Manual Verification 'Python CLI Frontend' c9d0f8a
