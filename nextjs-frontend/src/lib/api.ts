@@ -3,7 +3,7 @@ export interface ChatResponseChunk {
   content: string;
 }
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_API_URL || 'http://0.0.0.0:8000';
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_API_URL || 'http://localhost:8000';
 
 /**
  * Streams chat responses from the backend.
