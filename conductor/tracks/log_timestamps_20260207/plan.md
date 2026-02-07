@@ -20,11 +20,11 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Next.js Utility' (Protocol in workflow.md)
 
 **Phase 3: Next.js Dev Server Log Formatting**
-- [ ] Task: Create `scripts/log-formatter.js`
-    - [ ] Implement a lightweight Node.js script that reads from `stdin` and outputs each line prefixed with the timestamp.
-    - [ ] Add a simple test script to verify the formatter.
-- [ ] Task: Update `package.json` to use the formatter
-    - [ ] Modify the `dev` script in `nextjs-frontend/package.json` to pipe output: `next dev | node scripts/log-formatter.js`.
+- [x] Task: Create `scripts/log-formatter.js`
+    - [x] Implement a lightweight Node.js script that reads from `stdin` and outputs each line prefixed with the timestamp.
+    - [x] Add a simple test script to verify the formatter.
+- [x] Task: Update `package.json` to use the formatter c8874c0
+    - [x] Modify the `dev` script in `nextjs-frontend/package.json` to pipe output: `next dev | node scripts/log-formatter.js`.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Next.js Dev Server' (Protocol in workflow.md)
 
 **Phase 4: Final Integration & Cleanup**
