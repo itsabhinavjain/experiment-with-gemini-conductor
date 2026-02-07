@@ -64,3 +64,4 @@ This document outlines the core technologies and frameworks chosen for the Claud
 ## 6. Assumptions
 
 -   **Backend Connectivity:** For development and testing of the `python-frontend`, it is assumed that the `python-backend` is implemented and running on `http://0.0.0.0:8000`.
+-   **Backend Connectivity:** For development and testing of the `nextjs-frontend`, it is assumed that the `python-backend` is implemented and running on `http://0.0.0.0:8000`.
