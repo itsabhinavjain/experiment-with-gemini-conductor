@@ -14,10 +14,8 @@ Goal: Ensure the chat area has a fixed height relative to the viewport and allow
 ## Phase 2: Auto-Scroll to Latest Message
 Goal: The chat should automatically scroll down whenever new messages or streaming chunks arrive.
 
-- [ ] **Task: Write tests for Auto-scroll behavior**
-    - [ ] Mock message additions and verify the scroll position moves to the bottom.
-- [ ] **Task: Implement Auto-scroll logic**
-    - [ ] Use `useRef` and `useEffect` in `MessageList.tsx` to trigger `scrollIntoView` or `scrollTop` updates when messages change.
+- [x] **Task: Write tests for Auto-scroll behavior** 13a973a
+- [x] **Task: Implement Auto-scroll logic** 13a973a
 - [ ] **Task: Conductor - User Manual Verification 'Phase 2: Auto-Scroll' (Protocol in workflow.md)**
 
 ## Phase 3: Markdown Overflow Fixes
