@@ -27,7 +27,7 @@
     - [x] Modify the `dev` script in `nextjs-frontend/package.json` to pipe output: `next dev | node scripts/log-formatter.js`.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Next.js Dev Server' (Protocol in workflow.md)
 
-**Phase 4: Final Integration & Cleanup**
+**Phase 4: Final Integration & Cleanup** [checkpoint: 5219c0f]
 - [x] Task: Final end-to-end verification c87c838
     - [x] Start both servers and verify the visual consistency of logs in the terminal.
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Integration' (Protocol in workflow.md)
