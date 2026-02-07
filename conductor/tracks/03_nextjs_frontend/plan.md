@@ -2,9 +2,9 @@
 
 ## Phase 1: Project Initialization
 
-- [ ] Task: Initialize `nextjs-frontend`
-  - [ ] Action: Run `npx create-next-app@latest nextjs-frontend` with TypeScript, Tailwind, and App Router.
-  - [ ] Action: Clean up default boilerplate code.
+- [x] Task: Initialize `nextjs-frontend` cfef725
+  - [x] Action: Run `npx create-next-app@latest nextjs-frontend` with TypeScript, Tailwind, and App Router.
+  - [x] Action: Clean up default boilerplate code.
 
 ## Phase 2: Core Implementation
 
