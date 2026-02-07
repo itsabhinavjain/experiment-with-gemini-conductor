@@ -4,5 +4,18 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Build the core functionality for the Claude Agent SDK with Python backend, including agent initialization, session management, and basic chat endpoints with streaming responses and thinking blocks, and also implement a basic Python CLI to interact with it.**
-  *Link: [./tracks/core_agent_sdk_20260207/](./tracks/core_agent_sdk_20260207/)*
+- [ ] **Track 01: Research and Python Backend Core**
+  *Build the foundation: research the Claude Agent SDK and implement the FastAPI backend with streaming and thinking blocks.*
+  *Link: [./tracks/01_backend_core/](./tracks/01_backend_core/)*
+
+- [ ] **Track 02: Python CLI Frontend**
+  *Develop a terminal-based client using `rich` that interacts with the Python backend.*
+  *Link: [./tracks/02_python_cli/](./tracks/02_python_cli/)*
+
+- [ ] **Track 03: Next.js Web Frontend**
+  *Create a modern web interface using Next.js App Router to interact with the Claude Agent SDK.*
+  *Link: [./tracks/03_nextjs_frontend/](./tracks/03_nextjs_frontend/)*
+
+- [ ] **Track 04: Educational Documentation**
+  *Produce beginner-friendly documentation explaining the system architecture and implementation details.*
+  *Link: [./tracks/04_documentation/](./tracks/04_documentation/)*

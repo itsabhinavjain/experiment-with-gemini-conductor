@@ -1,0 +1,8 @@
+{
+  "track_id": "01_backend_core",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-07T00:00:00Z",
+  "updated_at": "2026-02-07T00:00:00Z",
+  "description": "Research the Claude Agent SDK and implement the FastAPI backend with streaming and thinking blocks."
+}

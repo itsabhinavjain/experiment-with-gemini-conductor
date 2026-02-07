@@ -1,4 +1,4 @@
-# Track core_agent_sdk_20260207 Context
+# Track 04: Educational Documentation
 
 - [Specification](./spec.md)
 - [Implementation Plan](./plan.md)
