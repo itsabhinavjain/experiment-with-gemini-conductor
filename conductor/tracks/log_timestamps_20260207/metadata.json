@@ -1,0 +1,8 @@
+{
+  "track_id": "log_timestamps_20260207",
+  "type": "chore",
+  "status": "new",
+  "created_at": "2026-02-07T14:30:00Z",
+  "updated_at": "2026-02-07T14:30:00Z",
+  "description": "Please make sure that whenever I am running the server in python-backend and nextjs-frontend, the server logs show a timestamp on the terminal in the format [YYYY-MM-DD HH-MM-SS]."
+}

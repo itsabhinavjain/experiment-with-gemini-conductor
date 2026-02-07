@@ -1,0 +1,8 @@
+{
+  "track_id": "fix_nextjs_chat_ui_20260207",
+  "type": "bug",
+  "status": "new",
+  "created_at": "2026-02-07T13:00:00Z",
+  "updated_at": "2026-02-07T13:00:00Z",
+  "description": "in nextjs-frontend - The chatwindow is not scrollable and I am able to view the previous messsages. Also when displaying a markdown text, the width of the text goes beyond the chat message, please fix these two issues."
+}
