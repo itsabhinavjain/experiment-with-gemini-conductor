@@ -1,3 +1,14 @@
+import logging
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='[%(asctime)s] - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H-%M-%S',
+    force=True
+)
+logger = logging.getLogger(__name__)
+
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sse_starlette.sse import EventSourceResponse
@@ -7,11 +18,6 @@ from agent.session import session_manager
 from utils.streaming import format_sse
 from claude_agent_sdk import ThinkingBlock, TextBlock, AssistantMessage
 import asyncio
-import logging
-
-# Configure logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Claude Agent SDK Backend")
 
@@ -40,6 +46,7 @@ async def chat(chat_request: ChatRequest):
     """
     Main chat endpoint that streams responses from the Claude Agent SDK.
     """
+    logger.info(f"Received chat request for session: {chat_request.session_id}")
     session_id, client = session_manager.get_or_create_session(chat_request.session_id)
 
     async def event_generator():
@@ -76,4 +83,18 @@ async def chat(chat_request: ChatRequest):
 if __name__ == "__main__":
     import uvicorn
     settings = get_settings()
-    uvicorn.run("main:app", host=settings.host, port=settings.port, reload=settings.debug)
+    
+    # Custom log configuration for uvicorn to match our format
+    log_config = uvicorn.config.LOGGING_CONFIG
+    log_config["formatters"]["default"]["fmt"] = "[%(asctime)s] - %(levelname)s - %(message)s"
+    log_config["formatters"]["default"]["datefmt"] = "%Y-%m-%d %H-%M-%S"
+    log_config["formatters"]["access"]["fmt"] = "[%(asctime)s] - %(levelname)s - %(message)s"
+    log_config["formatters"]["access"]["datefmt"] = "%Y-%m-%d %H-%M-%S"
+    
+    uvicorn.run(
+        "main:app", 
+        host=settings.host, 
+        port=settings.port, 
+        reload=settings.debug,
+        log_config=log_config
+    )

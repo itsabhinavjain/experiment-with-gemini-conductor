@@ -1,7 +1,10 @@
 import os
+import logging
 from claude_agent_sdk import ClaudeSDKClient, ClaudeAgentOptions
 from config import get_settings
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 class AgentManager:
     """
@@ -18,6 +21,7 @@ class AgentManager:
         Prioritizes ANTHROPIC_API_KEY from settings. If not available,
         it relies on the local 'claude' CLI authentication by default.
         """
+        logger.info("Creating new Claude SDK client")
         if options is None:
             # Default options for the agent. 
             # We omit 'model' to use the local claude config default.
